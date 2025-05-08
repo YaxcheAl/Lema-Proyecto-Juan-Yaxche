@@ -159,7 +159,7 @@ INSERT INTO curriculums VALUES (
             </experiencia>
             <educacion>
                 <titulo>Máster en Marketing Digital</titulo>
-                <institucion>ESIC Business & Marketing School</institucion>
+                <institucion>ESIC Business y Marketing School</institucion>
                 <anio>2020</anio>
             </educacion>
         </curriculum>'
