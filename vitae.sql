@@ -72,7 +72,7 @@ INSERT INTO curriculums VALUES (
 
 INSERT INTO curriculums VALUES (
    3,
-    'Jhnony Marin',
+    'Jhonny Marin',
     636778956,
     XMLTYPE('
         <curriculum>

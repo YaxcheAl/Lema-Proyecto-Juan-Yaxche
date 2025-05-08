@@ -14,11 +14,11 @@ set telefono = 621464156
 where nombre = 'Jhonny Marin';
 
 --Sacar por pantalla el titulo de las personas que han trabajado en Microsoft
-select extractvalue(DATOS_CV, 'curriculum/educacion/titulo/text()')
+select extractvalue(DATOS_CV, 'curriculum/educacion/titulo')
 from curriculums
 where extractvalue(DATOS_CV, 'curriculum/experiencia/trabajo') = 'Microsoft';
 
 --Sacar por pantalla el nombre de las personas que tienen un titulo llamado "Máster en Marketing Digital"
-select extractvalue(DATOS_CV, 'curriculum/empresa/text()')
+select extractvalue(DATOS_CV, 'curriculum/empresa')
 from curriculums
 where extractvalue(DATOS_CV, 'curriculum/educacion/titulo') = 'Máster en Marketing Digital';
