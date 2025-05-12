@@ -1,3 +1,5 @@
+--Updates
+
 --Modificar el email de la persona cuyo nombre es Pedro Mata 
 update curriculums
 set datos_cv = updatexml(datos_cv, 'curriculum/personal/email/text()','pedromataperez@gmail.com')
@@ -13,6 +15,8 @@ update curriculums
 set telefono = 621464156
 where nombre = 'Jhonny Marin';
 
+--Consultas sobre campos no xml
+
 --Sacar por pantalla la institucion donde se formaron las personas que han trabajado en Microsoft
 select extractvalue(DATOS_CV, 'curriculum/educacion/institucion')
 from curriculums
@@ -22,3 +26,31 @@ WHERE existsNode(DATOS_CV, '/curriculum/experiencia/trabajo[empresa="Microsoft"]
 select nombre
 from curriculums
 where extractvalue(DATOS_CV, 'curriculum/educacion/titulo') = 'Grado en Ciencias de la Computacion';
+
+--Consultas sobre campos xml
+
+--Informacion del curriculum del apartado educacion
+SELECT XMLELEMENT('curriculum',
+    XMLAGG(
+        XMLELEMENT('educacion',
+            XMLELEMENT('titulo', EXTRACTVALUE(datos_cv, '/curriculum/educacion/titulo')),
+            XMLELEMENT('institucion',  EXTRACTVALUE(datos_cv, '/curriculum/educacion/institucion')),
+            XMLELEMENT('anio',    EXTRACTVALUE(datos_cv, '/curriculum/educacion/anio'))
+        )
+    )
+)
+FROM curriculums;
+
+SELECT XMLROOT(
+         XMLELEMENT('curriculums',
+           XMLAGG(
+             XMLELEMENT('curriculum',
+               XMLATTRIBUTES(id, 'id'),
+               XMLFOREST(
+                 nombre, telefono
+               ),
+               XMLELEMENT('datos',
+                datos_cv)))),
+         VERSION '1.0'
+       )
+FROM curriculums;
