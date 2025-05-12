@@ -29,7 +29,7 @@ where extractvalue(DATOS_CV, 'curriculum/educacion/titulo') = 'Grado en Ciencias
 
 --Consultas sobre campos xml
 
---Informacion del curriculum del apartado educacion
+--Informacion de curriculum del apartado educacion
 SELECT XMLELEMENT('curriculum',
     XMLAGG(
         XMLELEMENT('educacion',
@@ -41,15 +41,17 @@ SELECT XMLELEMENT('curriculum',
 )
 FROM curriculums;
 
+--Toda la informacion de todos los curriculums
 SELECT XMLROOT(
-         XMLELEMENT('curriculums',
+         XMLELEMENT("curriculums",
            XMLAGG(
-             XMLELEMENT('curriculum',
-               XMLATTRIBUTES(id, 'id'),
+             XMLELEMENT("curriculum",
+               XMLATTRIBUTES(id AS "id"),
                XMLFOREST(
-                 nombre, telefono
+                 nombre AS "nombre", 
+                 telefono AS "telefono"
                ),
-               XMLELEMENT('datos',
+               XMLELEMENT("datos",
                 datos_cv)))),
          VERSION '1.0'
        )
