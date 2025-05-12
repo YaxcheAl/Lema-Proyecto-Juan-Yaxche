@@ -126,7 +126,7 @@ INSERT INTO curriculums VALUES (
                 </trabajo>
             </experiencia>
             <educacion>
-                <titulo>Grado en Ciencias de la Computación</titulo>
+                <titulo>Grado en Ciencias de la Computacion</titulo>
                 <institucion>Universidad Complutense de Madrid</institucion>
                 <anio>2010</anio>
             </educacion>
