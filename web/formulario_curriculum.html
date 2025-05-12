@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Formulario para Currículum Vitae</title>
+</head>
+<body>
+<main>
+  <h1>Crear tu Currículum Vitae</h1>
+  <form>
+    <section class="section">
+      <h2>Información Personal</h2>
+      <label for="fullName">Nombre completo *</label>
+      <input type="text" id="fullName" name="fullName" required placeholder="Ej: Juan Pérez" />
+      
+      <label for="email">Correo electrónico *</label>
+      <input type="email" id="email" name="email" required placeholder="Ej: correo@ejemplo.com" />
+      
+      <label for="phone">Teléfono *</label>
+      <input type="tel" id="phone" name="phone" required placeholder="Ej: +34 600 000 000" pattern="^[+0-9\s-]{6,15}$" />
+      
+      <label for="address">Dirección</label>
+      <input type="text" id="address" name="address" placeholder="Ciudad, País" />
+    </section>
+    
+    <section class="section">
+      <h2>Resumen Profesional</h2>
+      <label for="summary">Descripción breve</label>
+      <textarea id="summary" name="summary" placeholder="Ej: Profesional con experiencia en..." maxlength="500"></textarea>
+    </section>
+    
+    <section class="section">
+      <h2>Educación</h2>
+      <p><em>Por favor, completa un solo bloque para educación, puedes imprimir varias veces para añadir más.</em></p>
+      <label for="educationSchool">Centro Educativo *</label>
+      <input type="text" id="educationSchool" name="educationSchool" required placeholder="Ej: Universidad de Madrid" />
+      <label for="educationDegree">Título / Grado *</label>
+      <input type="text" id="educationDegree" name="educationDegree" required placeholder="Ej: Licenciatura en Informática" />
+      <label for="educationPeriod">Periodo *</label>
+      <input type="text" id="educationPeriod" name="educationPeriod" required placeholder="Ej: 2015 - 2019" />
+    </section>
+
+    <section class="section">
+      <h2>Experiencia Laboral</h2>
+      <p><em>Por favor, completa un solo bloque para experiencia, puedes imprimir varias veces para añadir más.</em></p>
+      <label for="experienceJobTitle">Puesto *</label>
+      <input type="text" id="experienceJobTitle" name="experienceJobTitle" required placeholder="Ej: Desarrollador Web" />
+      <label for="experienceCompany">Empresa *</label>
+      <input type="text" id="experienceCompany" name="experienceCompany" required placeholder="Ej: Empresa XYZ" />
+      <label for="experiencePeriod">Periodo *</label>
+      <input type="text" id="experiencePeriod" name="experiencePeriod" required placeholder="Ej: 2020 - 2023" />
+      <label for="experienceDescription">Descripción</label>
+      <textarea id="experienceDescription" name="experienceDescription" placeholder="Responsabilidades y logros" maxlength="500"></textarea>
+    </section>
+
+    <section class="section">
+      <h2>Habilidades</h2>
+      <label for="skills">Lista tus habilidades (separadas por comas)</label>
+      <input type="text" id="skills" name="skills" placeholder="Ej: JavaScript, HTML, Comunicación" />
+    </section>
+    
+    <button type="submit">Enviar</button>
+  </form>
+</main>
+</body>
+</html>
+
+```
