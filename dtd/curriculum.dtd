@@ -1,4 +1,3 @@
-<!-- curriculum.dtd -->
 <!ELEMENT curriculum (informacion_personal, resumen_profesional, educacion, experiencia_laboral, habilidades)>
 <!ELEMENT informacion_personal (nombre, correo_electronico, telefono, direccion, fecha_nacimiento)>
 <!ELEMENT nombre (#PCDATA)>
