@@ -1,0 +1,40 @@
+<curriculum>
+    <informacion_personal>
+        <nombre>Yaxche</nombre>
+        <correo_electronico>yaxchealvarezrego@gmail.com</correo_electronico>
+        <telefono>+34 625 87 41 50</telefono>
+        <direccion>calle castillo de quejana, 30</direccion>
+        <fecha_nacimiento>11/09/2006</fecha_nacimiento>
+    </informacion_personal>
+    <resumen_profesional>
+        Estudiante de Administracion de Sistemas Informaticos y Redes con poca experiencia.
+        Empecé los estudios en barcelona pero ahora estoy residiendo en vitoria y tengo la intencion de establecerme aqui.
+        Buscando una oportunidad para aplicar mis conocimientos y habilidades en un entorno profesional.
+    </resumen_profesional>
+    <educacion>
+        <centro_educativo>
+            <nombre>IES Joan D'austria</nombre>
+            <Titulo_Grado>Sistemas Microinformaticos y Redes</Titulo_Grado>
+            <Periodo>2022-2024</Periodo>
+        </centro_educativo>
+        <centro_educativo>
+            <nombre>Ciudad Jardin</nombre>
+            <Titulo_Grado>Administracion de Sistemas Informaticos y Redes (primer año)</Titulo_Grado>
+            <Periodo>2024-2025</Periodo>
+        </centro_educativo>
+    </educacion>
+    <experiencia_laboral>
+        <experiencia>
+            <puesto>Becario</puesto>
+            <Empresa>Institut Bac De Roda - Barcelona</Empresa>
+            <periodo>2023-2024</periodo>
+            <responsabilidades>
+                Supervisaba el estado de los equipos del instituto, ordenadores, portatiles e impresoras.
+                Ademas, ayudaba a los profesores y alumnos a resolver los problemas que tuviesen con los equipos.
+            </responsabilidades>
+        </experiencia>
+    </experiencia_laboral>
+    <habilidades>
+        <habilidad>facilidad para aprender</habilidad>
+    </habilidades>
+</curriculum>

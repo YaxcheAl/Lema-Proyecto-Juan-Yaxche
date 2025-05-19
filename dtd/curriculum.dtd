@@ -1,0 +1,25 @@
+<!-- curriculum.dtd -->
+<!ELEMENT curriculum (informacion_personal, resumen_profesional, educacion, experiencia_laboral, habilidades)>
+<!ELEMENT informacion_personal (nombre, correo_electronico, telefono, direccion, fecha_nacimiento)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT correo_electronico (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT fecha_nacimiento (#PCDATA)>
+
+<!ELEMENT resumen_profesional (#PCDATA)>
+
+<!ELEMENT educacion (centro_educativo*)>
+<!ELEMENT centro_educativo (nombre, Titulo_Grado, Periodo)>
+<!ELEMENT Titulo_Grado (#PCDATA)>
+<!ELEMENT Periodo (#PCDATA)>
+
+<!ELEMENT experiencia_laboral (experiencia*)>
+<!ELEMENT experiencia (puesto, Empresa, periodo, responsabilidades)>
+<!ELEMENT puesto (#PCDATA)>
+<!ELEMENT Empresa (#PCDATA)>
+<!ELEMENT periodo (#PCDATA)>
+<!ELEMENT responsabilidades (#PCDATA)>
+
+<!ELEMENT habilidades (habilidad*)>
+<!ELEMENT habilidad (#PCDATA)>
