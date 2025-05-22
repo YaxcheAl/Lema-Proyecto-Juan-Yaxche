@@ -1,0 +1,30 @@
+<curriculum>
+    <informacion_personal>
+        <nombre>Juan</nombre>
+        <correo_electronico>juanandresmataz40@gmail.com</correo_electronico>
+        <telefono>+34 631 63 52 36</telefono>
+        <direccion>calle Diego martinez de alava 4, bajo b</direccion>
+        <fecha_nacimiento>08/09/2006</fecha_nacimiento>
+    </informacion_personal>
+    <resumen_profesional>
+        Estudiante de Administracion de Sistemas Informaticos y Redes sin experiencia, empecé desde cero en este mundo hace casi 1 año.
+    </resumen_profesional>
+    <educacion>
+        <centro_educativo>
+            <nombre>U.E NUESTRA SEÑORA DE LA ASUNCIÓN</nombre>
+            <Titulo_Grado>Bachillerato</Titulo_Grado>
+            <Periodo>2022-2023</Periodo>
+        </centro_educativo>
+        <centro_educativo>
+            <nombre>Ciudad Jardin</nombre>
+            <Titulo_Grado>Administracion de Sistemas Informaticos y Redes (primer año)</Titulo_Grado>
+            <Periodo>2024-2025</Periodo>
+        </centro_educativo>
+    </educacion>
+    <experiencia_laboral>
+
+    </experiencia_laboral>
+    <habilidades>
+        <habilidad>Me adapto a casi todo</habilidad>
+    </habilidades>
+</curriculum>
