@@ -46,7 +46,6 @@
                         <p><strong>Responsabilidades:</strong> <xsl:value-of select="responsabilidades"/></p>
                     </div>
                 </xsl:for-each>
-
                 <h2>Habilidades</h2>
                 <ul>
                     <xsl:for-each select="curriculum/habilidades/habilidad">
