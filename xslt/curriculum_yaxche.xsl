@@ -24,8 +24,8 @@
                 <p><strong>Teléfono:</strong> <xsl:value-of select="curriculum/informacion_personal/telefono"/></p>
                 <p><strong>Dirección:</strong> <xsl:value-of select="curriculum/informacion_personal/direccion"/></p>
                 <p><strong>Fecha de Nacimiento:</strong> <xsl:value-of select="curriculum/informacion_personal/fecha_nacimiento"/></p>
-                <a target="_blank"><xsl:attribute name="href">../imagenes/<xsl:value-of select="curriculum/informacion_personal/foto"/></xsl:attribute><img alt="imagen yaxche">
-                <xsl:attribute name="src">../imagenes/<xsl:value-of select="curriculum/informacion_personal/foto"/></xsl:attribute></img></a>
+                <a target="_blank"><xsl:attribute name="href">../imagenes/<xsl:value-of select="curriculum/informacion_personal/imagen"/></xsl:attribute><img alt="imagen yaxche">
+                <xsl:attribute name="src">../imagenes/<xsl:value-of select="curriculum/informacion_personal/imagen"/></xsl:attribute></img></a>
                 <h2>Resumen Profesional</h2>
                 <p><xsl:value-of select="curriculum/resumen_profesional"/></p>
 
