@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="curriculum">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="informacion_personal">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="correo_electronico" type="xs:string" />
+                            <xs:element name="telefono" type="xs:string" />
+                            <xs:element name="direccion" type="xs:string" />
+                            <xs:element name="fecha_nacimiento" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="resumen_profesional" type="xs:string" />
+                <xs:element name="educacion">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="centro_educativo" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string" />
+                                        <xs:element name="Titulo_Grado" type="xs:string" />
+                                        <xs:element name="Periodo" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="experiencia_laboral">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="experiencia">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="puesto" type="xs:string" />
+                                        <xs:element name="Empresa" type="xs:string" />
+                                        <xs:element name="periodo" type="xs:string" />
+                                        <xs:element name="responsabilidades" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="habilidades">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="habilidad" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
