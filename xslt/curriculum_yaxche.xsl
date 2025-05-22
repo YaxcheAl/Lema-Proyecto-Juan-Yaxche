@@ -5,7 +5,7 @@
         <html>
             <head>
                 <title>Currículum Vitae de <xsl:value-of select="curriculum/informacion_personal/nombre"/></title>
-                <link rel="stylesheet" type="text/css" href="estilo_curriculum.css"/>
+                <link rel="stylesheet" type="text/css" href="../estilo/estilo_curriculum.css"/>
             </head>
             <body>
                 <h1>Currículum Vitae</h1>
