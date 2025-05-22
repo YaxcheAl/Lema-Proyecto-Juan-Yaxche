@@ -9,6 +9,7 @@
     <resumen_profesional>
         Estudiante de Administracion de Sistemas Informaticos y Redes sin experiencia, empecé desde cero en este mundo hace casi 1 año.
     </resumen_profesional>
+      <imagen>../imagenes/yo.jpg</imagen>
     <educacion>
         <centro_educativo>
             <nombre>U.E NUESTRA SEÑORA DE LA ASUNCIÓN</nombre>

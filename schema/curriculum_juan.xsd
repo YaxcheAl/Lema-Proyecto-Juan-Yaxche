@@ -15,6 +15,7 @@
                     </xs:complexType>
                 </xs:element>
                 <xs:element name="resumen_profesional" type="xs:string" />
+                <xs:element name="imagen" type="xs:string" />
                 <xs:element name="educacion">
                     <xs:complexType>
                         <xs:sequence>
