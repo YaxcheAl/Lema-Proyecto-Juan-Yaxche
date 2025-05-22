@@ -6,7 +6,7 @@
         <telefono>+34 631 63 52 36</telefono>
         <direccion>calle Diego martinez de alava 4, bajo b</direccion>
         <fecha_nacimiento>08/09/2006</fecha_nacimiento>
-        <imagen>../imagenes/juan.jpg</imagen>
+        <imagen tipo="jpg">../imagenes/juan.jpg</imagen>
     </informacion_personal>
     <resumen_profesional>
         Estudiante de Administracion de Sistemas Informaticos y Redes sin experiencia, empecé desde cero en este mundo hace casi 1 año.
