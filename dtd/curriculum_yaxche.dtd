@@ -1,11 +1,11 @@
 <!ELEMENT curriculum (informacion_personal, resumen_profesional, educacion, experiencia_laboral, habilidades)>
-<!ELEMENT informacion_personal (nombre, correo_electronico, telefono, direccion, fecha_nacimiento,foto)>
+<!ELEMENT informacion_personal (nombre, correo_electronico, telefono, direccion, fecha_nacimiento,imagen)>
 <!ELEMENT nombre (#PCDATA)>
 <!ELEMENT correo_electronico (#PCDATA)>
 <!ELEMENT telefono (#PCDATA)>
 <!ELEMENT direccion (#PCDATA)>
 <!ELEMENT fecha_nacimiento (#PCDATA)>
-<!ELEMENT foto (#PCDATA)>
+<!ELEMENT imagen (#PCDATA)>
 
 <!ELEMENT resumen_profesional (#PCDATA)>
 
