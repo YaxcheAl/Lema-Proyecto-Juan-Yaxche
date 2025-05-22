@@ -30,7 +30,22 @@
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
-                <xs:element name="experiencia_laboral" type="xs:string" />
+                <xs:element name="experiencia_laboral">
+                    <xs:complexType>
+                        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                            <xs:element name="experiencia" maxOccurs="unbounded" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="puesto" type="xs:string" />
+                                        <xs:element name="Empresa" type="xs:string" />
+                                        <xs:element name="periodo" type="xs:string" />
+                                        <xs:element name="responsabilidades" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
                 <xs:element name="habilidades">
                     <xs:complexType>
                         <xs:sequence>
