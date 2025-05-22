@@ -6,6 +6,7 @@
 <!ELEMENT direccion (#PCDATA)>
 <!ELEMENT fecha_nacimiento (#PCDATA)>
 <!ELEMENT imagen (#PCDATA)>
+<!ATTLIST imagen tipo CDATA #REQUIRED>
 
 <!ELEMENT resumen_profesional (#PCDATA)>
 
